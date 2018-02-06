@@ -4,5 +4,11 @@
   "defaultLayout": "phone-portrait",
   "previewToken": "8c4ef2b5",
   "uiCommonVersion": "5.2.10",
-  "creatorId": "gdlggara"
+  "creatorId": "gdlggara",
+  "id": "afs_go",
+  "previewImageURL": "/previews/8c4ef2b5-afs_go/app/blank.png",
+  "isVersioned": true,
+  "githubRepo": "https://github.com/ggara/AFS_GO",
+  "creatorName": "Guillermo Garate Amaral",
+  "sdks": []
 }

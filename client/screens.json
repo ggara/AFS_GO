@@ -1,7 +1,7 @@
 {
   "id": "app",
   "name": "afs_go",
-  "startScreen": "app.blank",
+  "startScreen": "app.login",
   "screens": [
     {
       "id": "blank",
