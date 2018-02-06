@@ -27,6 +27,13 @@
       "sourceScreenId": "app.login.loginconfident",
       "sourceAppId": "universaltemplates",
       "model": "login"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "sourceScreenId": "app.home.homecool",
+      "sourceAppId": "universaltemplates",
+      "model": "home"
     }
   ],
   "sourceAppId": "_blank",
