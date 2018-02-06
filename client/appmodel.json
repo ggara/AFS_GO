@@ -87,5 +87,13 @@
         "properties": {}
       }
     }
+  },
+  "Login": {
+    "type": "object",
+    "properties": {
+      "isLogin": {
+        "type": "string"
+      }
+    }
   }
 }
