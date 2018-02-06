@@ -25,8 +25,7 @@
       "id": "login",
       "name": "Login",
       "sourceScreenId": "app.login.loginconfident",
-      "sourceAppId": "universaltemplates",
-      "model": "Login"
+      "sourceAppId": "universaltemplates"
     },
     {
       "id": "home",
