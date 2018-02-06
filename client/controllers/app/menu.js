@@ -1,10 +1,16 @@
 angular.module('app').controller('app_menu', app_menu);
-function app_menu($scope, app) {
+function app_menu($scope, app, $ionicPopup) {
     'use strict';
+    var isSetup = false;
+    
     app.init($scope);
-}
-
-$scope.alert = function () {
+    
+     if (!isSetup) {
+            app.call('popup.getConfirmPopupText');
+            isSetup = true;
+        }
+    
+    $scope.alert = function () {
         $ionicPopup.show({
             title: 'About',
             subTitle: 'This is an alert box, click OK button',
@@ -22,3 +28,5 @@ $scope.alert = function () {
                 }]
         });
     };
+    
+}
