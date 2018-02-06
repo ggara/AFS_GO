@@ -40,7 +40,7 @@
       "name": "about",
       "sourceScreenId": "app.popup",
       "sourceAppId": "JSPopup",
-      "model": "about"
+      "model": "about_2"
     }
   ],
   "sourceAppId": "_blank",
