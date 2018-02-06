@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "isLogin": {
+      "type": "identifier",
+      "selector": "body",
+      "control": "property.innerText"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isLogin"
+      ],
+      "screens": [
+        "login"
+      ]
+    }
+  ]
+}
