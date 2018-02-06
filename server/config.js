@@ -1,14 +1,14 @@
 'use strict';
 module.exports = {
     // Start URL that browsing should start at.
-    startURL: '',
+    startURL: 'about:blank',
     // Start Method when there is no start URL.  This is fpr when we are doing an API integration,
     // and we don't actually need to load phantom (yet).
     // startMethod: "login.onStart",
     // *******  State Detection configuration, used to determine when to check states *************
     stateDetection: {
         domMutations: {
-            watch: true,
+            watch: false,
             ignoreList: []
         },
         // List of DOM mutations to ignore.  Match is substring match.  Start with '=' for exact match.
