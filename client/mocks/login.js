@@ -1,3 +1,3 @@
 'use strict';
 window.mocks = window.mocks || {};
-window.mocks.Login = window.mocks.Login || {};
+window.mocks.login = window.mocks.login || {};

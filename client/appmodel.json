@@ -1,48 +1,4 @@
 {
-  "login": {
-    "type": "object",
-    "comment": "Login",
-    "properties": {
-      "username": {
-        "type": "string",
-        "label": "username",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "password": {
-        "type": "string",
-        "label": "password",
-        "update": {
-          "type": "action",
-          "action": [
-            "submit"
-          ]
-        }
-      },
-      "errorMessage": {
-        "type": "string",
-        "label": "errorMessage",
-        "update": {
-          "type": "none"
-        }
-      },
-      "submit": {
-        "type": "action",
-        "parameters": {
-          "username": {
-            "type": "string"
-          },
-          "password": {
-            "type": "string"
-          }
-        }
-      }
-    }
-  },
   "home": {
     "type": "object",
     "comment": "",
@@ -85,6 +41,24 @@
       "confirmMessage": {
         "type": "object",
         "properties": {}
+      }
+    }
+  },
+  "login": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "errorMessage": {
+        "type": "string"
+      },
+      "submit": {
+        "type": "action"
       }
     }
   }
