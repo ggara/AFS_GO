@@ -1,0 +1,8 @@
+{
+  "name": "afs_go",
+  "description": "AFS mobile",
+  "defaultLayout": "phone-portrait",
+  "previewToken": "8c4ef2b5",
+  "uiCommonVersion": "5.2.10",
+  "creatorId": "gdlggara"
+}
