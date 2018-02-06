@@ -66,5 +66,26 @@
         "type": "action"
       }
     }
+  },
+  "about": {
+    "type": "object",
+    "properties": {
+      "alert": {
+        "type": "action"
+      },
+      "confirm": {
+        "type": "action"
+      },
+      "alertConfirmationMessage": {
+        "type": "string"
+      },
+      "confirmPopupText": {
+        "type": "string"
+      },
+      "confirmMessage": {
+        "type": "object",
+        "properties": {}
+      }
+    }
   }
 }

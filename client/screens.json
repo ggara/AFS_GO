@@ -34,6 +34,13 @@
       "sourceScreenId": "app.home.homecool",
       "sourceAppId": "universaltemplates",
       "model": "home"
+    },
+    {
+      "id": "about",
+      "name": "about",
+      "sourceScreenId": "app.popup",
+      "sourceAppId": "JSPopup",
+      "model": "about"
     }
   ],
   "sourceAppId": "_blank",
