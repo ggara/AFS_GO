@@ -4,7 +4,7 @@
     "isLogin": {
       "type": "identifier",
       "selector": "body",
-      "control": "property.innerText"
+      "control": "exists"
     }
   },
   "connect": [
