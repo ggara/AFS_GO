@@ -10,6 +10,7 @@
   "connect": [
     {
       "match": [
+        "isLogin",
         "isLogin"
       ],
       "screens": [
