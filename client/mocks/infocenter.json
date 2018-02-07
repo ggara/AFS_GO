@@ -1,0 +1,19 @@
+{
+  "tabs": [
+    {
+      "name": "Tab One",
+      "icon": "ion-ios-information",
+      "selected": true
+    },
+    {
+      "name": "Tab Two",
+      "icon": "ion-ios-bell",
+      "selected": false
+    },
+    {
+      "name": "Tab Three",
+      "icon": "ion-help-buoy",
+      "selected": false
+    }
+  ]
+}

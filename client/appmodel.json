@@ -61,5 +61,31 @@
         "type": "action"
       }
     }
+  },
+  "infocenter": {
+    "type": "object",
+    "comment": "Tabs",
+    "properties": {
+      "tabs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "icon": {
+              "type": "string"
+            },
+            "selected": {
+              "type": "boolean"
+            },
+            "action": {
+              "type": "action"
+            }
+          }
+        }
+      }
+    }
   }
 }
