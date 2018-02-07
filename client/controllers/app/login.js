@@ -25,10 +25,10 @@ function app_login($scope, app, $q) {
 
     $scope.login = function () {
 
-        if($scope.data.username === ""){
+        if(!$scope.data.username){
             $scope.data.errorMessage = "Invalid Username";
         }
-        else if ($scope.data.password === ""){
+        else if (!$scope.data.password){
             $scope.data.errorMessage = "Invalid Password";
         }
         else{
