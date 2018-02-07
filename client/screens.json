@@ -40,6 +40,12 @@
       "name": "Infocenter",
       "folder": true,
       "screens": []
+    },
+    {
+      "id": "infocenter",
+      "name": "Infocenter",
+      "folder": true,
+      "screens": []
     }
   ],
   "sourceAppId": "_blank",
