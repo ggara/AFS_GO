@@ -24,7 +24,6 @@ function app_login($scope, app, $q) {
     };
 
     $scope.login = function () {
-        $scope.app.showLoading('Logging in');
 
         if($scope.data.username !== ""){
             $scope.data.errorMessage = "Invalid Username";
@@ -37,6 +36,7 @@ function app_login($scope, app, $q) {
                 userName: $scope.data.username,
                 password: $scope.data.password
             }
+            $scope.app.showLoading('Logging in');
             app.call("login.login", user);
         }
     };
