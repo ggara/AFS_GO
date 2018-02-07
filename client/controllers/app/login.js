@@ -18,40 +18,21 @@ function app_login($scope, app, $q) {
         }
         return deferred.promise;
     };
-    $scope.loginViaTouch = function () {
-        checkSupport().then(function (isAvailable) {
-            if (isAvailable) {
-                window.plugins.touchid.verify('credentials', ' ', function (stringCreds) {
-                    var credentials = JSON.parse(stringCreds);
-                    $scope.data.username = credentials.username;
-                    $scope.data.password = credentials.password;
-                    $scope.$apply();
-                    $scope.doLogin(credentials);
-                }, function (err) {
-                    alert(err);
-                });
-            } else {
-                alert('touch id is not available');
-            }
-        });
-    };
+    
     $scope.reset = function () {
         localStorage.clear();
     };
+
     $scope.login = function () {
-        $scope.doLogin({
-            username: $scope.data.username,
-            password: $scope.data.password
-        }, false);
-    };
-    $scope.doLogin = function (credentials, useWebsocket) {
         $scope.app.showLoading('Logging in');
-        var username = credentials.username;
-        var password = credentials.password;
-        if (useWebsocket || app.login($scope.data.username, $scope.data.password)) {
-            app.action('login', 'submit', this);
+        var user = {
+            userName: $scope.data.username,
+            password: $scope.data.password
         }
+        // app.login(user);
+        app.call("login.login", user);
     };
+
     $scope.doAppLogin = function (credentials) {
         window.plugins.touchid.save('credentials', JSON.stringify(credentials));
         $scope.doLogin(credentials, true);
