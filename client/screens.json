@@ -39,7 +39,15 @@
       "id": "infocenter",
       "name": "Infocenter",
       "folder": true,
-      "screens": []
+      "screens": [
+        {
+          "id": "infocenter",
+          "name": "infocenter",
+          "sourceScreenId": "app.tabbednavigation.tabscool",
+          "sourceAppId": "universaltemplates",
+          "model": "infocenter"
+        }
+      ]
     }
   ],
   "sourceAppId": "_blank",
