@@ -2,8 +2,6 @@ angular.module('app').controller('app_infocenter_infocenter', app_infocenter_inf
 function app_infocenter_infocenter($scope, app) {
     'use strict';
     app.init($scope);
-    
-    $console.log("entro infocenter");
 
     $scope.data.tabs = {
         "tabs" :[
