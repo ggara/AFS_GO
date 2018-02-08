@@ -3,8 +3,8 @@ function app_infocenter_infocenter($scope, app) {
     'use strict';
     app.init($scope);
 
-    $scope.data.tabs = {
-        "tabs" :[
+    $scope.data.tabs = 
+        [
             {
               "name": "Tab One",
               "icon": "ion-ios-information",
@@ -20,7 +20,6 @@ function app_infocenter_infocenter($scope, app) {
               "icon": "ion-help-buoy",
               "selected": false
             }
-          ]
-    };
+          ];
     
 }
