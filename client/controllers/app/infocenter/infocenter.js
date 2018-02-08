@@ -6,18 +6,13 @@ function app_infocenter_infocenter($scope, app) {
     $scope.data.tabs = 
         [
             {
-              "name": "Tab One",
+              "name": "Batch",
               "icon": "ion-ios-information",
               "selected": true
             },
             {
-              "name": "Tab Two",
+              "name": "Carton",
               "icon": "ion-ios-bell",
-              "selected": false
-            },
-            {
-              "name": "Tab Three",
-              "icon": "ion-help-buoy",
               "selected": false
             }
           ];
