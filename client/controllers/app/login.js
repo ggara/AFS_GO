@@ -24,13 +24,20 @@ function app_login($scope, app, $q) {
     };
 
     $scope.login = function () {
-        $scope.app.showLoading('Logging in');
-        var user = {
-            userName: $scope.data.username,
-            password: $scope.data.password
+        if(!$scope.data.username){
+            $scope.data.errorMessage = "Invalid Username";
         }
-        // app.login(user);
-        app.call("login.login", user);
+        else if (!$scope.data.password){
+            $scope.data.errorMessage = "Invalid Password";
+        }
+        else{
+            var user = {
+                userName: $scope.data.username,
+                password: $scope.data.password
+            }
+            $scope.app.showLoading('Logging in');
+            app.call("login.login", user);
+        }
     };
 
     $scope.doAppLogin = function (credentials) {
