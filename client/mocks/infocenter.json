@@ -3,12 +3,14 @@
     {
       "name": "Batch",
       "icon": "ion-ios-information",
-      "selected": true
+      "selected": true,
+      "action": "Batch"
     },
     {
       "name": "Carton",
       "icon": "ion-ios-bell",
-      "selected": false
+      "selected": false,
+      "action": "Carton"
     }
   ]
 }

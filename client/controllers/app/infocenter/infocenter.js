@@ -9,13 +9,13 @@ function app_infocenter_infocenter($scope, app) {
               "name": "Batch",
               "icon": "ion-ios-barcode-outline",
               "selected": true,
-              "action": ""
+              "action": "Batch"
             },
             {
               "name": "Carton",
               "icon": "ion-ios-box-outline",
               "selected": false,
-              "action": ""
+              "action": "Carton"
             }
         ];
 }
