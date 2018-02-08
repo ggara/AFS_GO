@@ -51,14 +51,5 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.infocenter/infocenter', {
-        views: {
-            app: {
-                controller: 'app_infocenter_infocenter',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.infocenter.infocenter');
-                }
-            }
-        }
     });
 });
