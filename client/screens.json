@@ -54,6 +54,12 @@
       "name": "Packing",
       "folder": true,
       "screens": []
+    },
+    {
+      "id": "packing",
+      "name": "Packing",
+      "folder": true,
+      "screens": []
     }
   ],
   "sourceAppId": "_blank",
