@@ -7,14 +7,15 @@ function app_infocenter_infocenter($scope, app) {
         [
             {
               "name": "Batch",
-              "icon": "ion-ios-information",
-              "selected": true
+              "icon": "ion-ios-barcode-outline",
+              "selected": true,
+              "action": ""
             },
             {
               "name": "Carton",
-              "icon": "ion-ios-bell",
-              "selected": false
+              "icon": "ion-ios-box-outline",
+              "selected": false,
+              "action": ""
             }
-          ];
-    
+        ];
 }
