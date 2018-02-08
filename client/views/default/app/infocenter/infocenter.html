@@ -12,7 +12,7 @@
         <div data-comp-id="div.1">
             <div class="row light-bg" data-comp-id="row.1" style="padding: 0px;">
                 <div class="col text-center" data-comp-id="column.1"
-                    ng-click="app.action('tabs', 'data.tabs[item].action', this)"
+                    ng-click="app.action('infocenter', 'tabs[item].action', this)"
                     ng-repeat="item in data.tabs"
                     ng-style="item.selected ? {borderBottom: '3px solid rgb(67, 152, 210)'} : {backgroundColor: 'rgb(243,243,243)'}"
                     style="margin: 0px 0px -5px;">
@@ -21,7 +21,7 @@
                     <i class="icon {{item.icon}} calm" data-comp-id="icon.2" ng-if="!item.selected"
                         style="font-size: 30px;"></i>
                     <div class=" positive" data-comp-id="text.1" ng-bind="item.name"
-                        ng-if="item.selected" style="font-weight: normal;">Tab 1</div>
+                        ng-if="item.selected" style="font-weight: normal;"></div>
                     <div class=" calm" data-comp-id="text.2" ng-bind="item.name"
                         ng-if="!item.selected" style="font-weight: normal;">Tab 1</div>
                 </div>
