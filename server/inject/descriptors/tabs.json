@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "isLogin": {
+      "type": "identifier",
+      "selector": "body",
+      "control": "exists"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isInfocenter",
+        "isInfocenter"
+      ],
+      "screens": [
+        "infocenter"
+      ]
+    }
+  ]
+}
