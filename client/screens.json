@@ -34,6 +34,20 @@
       "sourceScreenId": "app.home.homecool",
       "sourceAppId": "universaltemplates",
       "model": "home"
+    },
+    {
+      "id": "infocenter",
+      "name": "Infocenter",
+      "folder": true,
+      "screens": [
+        {
+          "id": "infocenter",
+          "name": "infocenter",
+          "sourceScreenId": "app.tabbednavigation.tabscool",
+          "sourceAppId": "universaltemplates",
+          "model": "infocenter"
+        }
+      ]
     }
   ],
   "sourceAppId": "_blank",
