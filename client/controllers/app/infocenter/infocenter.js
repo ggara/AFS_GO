@@ -26,39 +26,18 @@ function app_infocenter_infocenter($scope, app) {
     };
     
     $scope.scan = function () {
-       
-        if (cordova&&cordova.plugins&&cordova.plugins.barcodeScanner)
-        {
-            cordova.plugins.barcodeScanner.scan(
-                // success callback function
-                function (result) {
-                    // wrapping in a timeout so the dialog doesn't free the app
-                    setTimeout(function () {
-                        //$scope.data.format = result.format;
-                        $scope.data.batchnumber = result.text;
-                        $scope.$digest();
-                        //app.action('home', 'submit', this);
-                        
-                    }, 0);
-                },
-    
-                // error callback function
-                function (error) {
-    
-                },
-    
-                // options object
-                {
-                    "preferFrontCamera": false,
-                    "showFlipCameraButton": true,
-                    "showTorchButton": true,
-                    "orientation": "landscape"
-                }
-            );
-        }
-        else
-        {
-          alert("Cordova Not available");  
-        }
+       cordova.plugins.barcodeScanner.scan(function (result) {
+            setTimeout(function () {
+                //$scope.data.format = result.format;
+                //$scope.data.trackingNumber = result.text;
+                $scope.$digest();
+            }, 0);
+        }, function (error) {
+        }, {
+            'preferFrontCamera': false,
+            'showFlipCameraButton': true,
+            'showTorchButton': true,
+            'orientation': 'landscape'
+        });
     };
 }
