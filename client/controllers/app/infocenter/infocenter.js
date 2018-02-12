@@ -18,7 +18,7 @@ function app_infocenter_infocenter($scope, app) {
         ];
         
     $scope.changeSelection = function (tab) {
-        app.data.tabs.forEach(function(currentTab){
+        $scope.data.tabs.forEach(function(currentTab){
             currentTab.selected = false;
         });
         
