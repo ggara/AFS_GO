@@ -48,6 +48,12 @@
           "model": "infocenter"
         }
       ]
+    },
+    {
+      "id": "packing",
+      "name": "Packing",
+      "folder": true,
+      "screens": []
     }
   ],
   "sourceAppId": "_blank",
