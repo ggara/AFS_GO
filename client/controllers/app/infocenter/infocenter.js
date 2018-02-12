@@ -3,7 +3,7 @@ function app_infocenter_infocenter($scope, app) {
     'use strict';
     app.init($scope);
 
-    app.data.tabs = 
+    $scope.data.tabs = 
         [
             {
               "name": "Batch",
