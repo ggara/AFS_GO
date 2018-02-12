@@ -30,7 +30,7 @@
             <div class="card" data-comp-display="card.1" data-comp-id="div.2">
                 <div class="row">
                     <div class="col">
-                        <div data-comp-id="text.3" style="font-weight: bold; font-size: 20px;">General Information</div>
+                        <div data-comp-id="text.3" style="font-weight: bold; font-size: 20px;">Batch General Information</div>
                     </div>
                 </div>
                 <div class="row" data-comp-id="row.2">
@@ -88,6 +88,76 @@
                 </div>
             </div>
         </div>
-        <div ng-if="data.tabs[1].selected">Carton</div>
+        <div ng-if="data.tabs[1].selected">
+            <div class="card" data-comp-display="card.1" data-comp-id="div.3">
+                <div class="row">
+                    <div class="col">
+                        <div data-comp-id="text.16" style="font-weight: bold; font-size: 20px;">Carton General Information</div>
+                    </div>
+                </div>
+                <div class="row" data-comp-id="row.3">
+                    <div class="col" data-comp-id="column.14">
+                        <div data-comp-id="text.17">Carton number</div>
+                    </div>
+                    <div class="col" data-comp-id="column.15">
+                        <div data-comp-id="text.18" ng-bind="data.carton.cartonNumber"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.16">
+                        <div data-comp-id="text.19">Status</div>
+                    </div>
+                    <div class="col" data-comp-id="column.17">
+                        <div data-comp-id="text.20" ng-bind="data.carton.Status"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.18">
+                        <div data-comp-id="text.21">Customer Order Line</div>
+                    </div>
+                    <div class="col" data-comp-id="column.19">
+                        <div data-comp-id="text.22" ng-bind="data.carton.customerOrderLine"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.20">
+                        <div data-comp-id="text.23">Inspection Group Number</div>
+                    </div>
+                    <div class="col" data-comp-id="column.21">
+                        <div data-comp-id="text.24" ng-bind="data.carton.inspectionGroupNumber"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.22">
+                        <div data-comp-id="text.25">Barcode Number</div>
+                    </div>
+                    <div class="col" data-comp-id="column.23">
+                        <div data-comp-id="text.26" ng-bind="data.carton.barcodeNumber"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.24">
+                        <div data-comp-id="text.27">Carton Type</div>
+                    </div>
+                    <div class="col" data-comp-id="column.25">
+                        <div data-comp-id="text.28" ng-bind="data.carton.cartonType"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" data-comp-id="column.26">
+                        <div data-comp-id="text.29">BackFlushed</div>
+                    </div>
+                    <div class="col" data-comp-id="column.27">
+                        <div data-comp-id="text.30" ng-bind="data.carton.backFlushed"
+                            style="font-weight: bold;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </ion-content>
 </ion-view>
