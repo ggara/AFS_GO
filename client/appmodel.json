@@ -85,6 +85,35 @@
             }
           }
         }
+      },
+      "batch": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Id": {
+              "type": "string"
+            },
+            "batchNumber": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "string"
+            },
+            "taskNumber": {
+              "type": "string"
+            },
+            "currentOperation": {
+              "type": "string"
+            },
+            "nextOperation": {
+              "type": "string"
+            }
+          }
+        }
       }
     }
   }
