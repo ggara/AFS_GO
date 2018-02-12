@@ -3,19 +3,25 @@ function app_infocenter_infocenter($scope, app) {
     'use strict';
     app.init($scope);
 
-    $scope.data.tabs = 
+    app.data.tabs = 
         [
             {
               "name": "Batch",
               "icon": "ion-ios-barcode-outline",
-              "selected": true,
-              "action": "Batch"
+              "selected": true
             },
             {
               "name": "Carton",
               "icon": "ion-ios-box-outline",
-              "selected": false,
-              "action": "Carton"
+              "selected": false
             }
         ];
+        
+    $scope.changeSelection = function (tab) {
+        app.data.tabs.forEach(function(currentTab){
+            currentTab.selected = false;
+        });
+        
+        tab.selected = true;
+    };
 }
