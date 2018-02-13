@@ -17,6 +17,8 @@ function app_infocenter_infocenter($scope, app) {
             }
         ];
         
+    $scope.data.batch = [{}];
+        
     $scope.changeSelection = function (tab) {
         $scope.data.tabs.forEach(function(currentTab){
             currentTab.selected = false;
