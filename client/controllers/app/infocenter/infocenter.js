@@ -29,7 +29,8 @@ function app_infocenter_infocenter($scope, app) {
     
     $scope.scan = function () {
         var batchNumber = "29021612B10005";
-        app.call("infocenter.getBatch", batchNumber);
+        $scope.app.showLoading('Searching for batch number: ' + batchNumber);
+        var api = app.call("infocenter.getBatch", batchNumber);
         /*
        cordova.plugins.barcodeScanner.scan(function (result) {
             setTimeout(function () {
