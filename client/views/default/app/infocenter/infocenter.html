@@ -28,7 +28,7 @@
         </div>
         <div ng-if="data.tabs[0].selected">
             <label class="item item-input" data-comp-id=".1">
-                <input ng-change="scan()" ng-model="data.BatchNumber"
+                <input ng-model="data.BatchNumber" ng-onkey="scan()"
                     placeholder="Enter batch number" style="text-align: center" type="text">
             </label>
             <div data-comp-id="text.3" ng-bind="data.errorMessage"
