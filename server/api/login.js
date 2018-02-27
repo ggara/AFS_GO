@@ -15,21 +15,24 @@ function login(page, user, res) {
 
     // Bind as the user
 	var adClient = ldap.createClient({ url: url });
-	adClient.bind(user.userName + "@" + config.domain, user.password, function(err) {
+	adClient.bind(user.userName + "@" + user.domain, user.password, function(err) {
 		if (err != null) {
 			if (err.name === "InvalidCredentialsError")                
                 page.data(function (data) {
                     data.errorMessage = "Credential error";
-                    data.username = user.userName;                    
+                    data.username = user.userName;
+                    data.domain = user.domain;
                 }).screen('login');
 			else
                 page.data(function (data) {
                     data.errorMessage = "Unknown error: " + JSON.stringify(err);
-                    data.username = user.userName;  
+                    data.username = user.userName;
+                    data.domain = user.domain;
                 }).screen('login');
 		} else {
             page.data(function (data) {              
-                data.username = user.userName;                    
+                data.username = user.userName;
+                data.domain = user.domain;
             }).screen('home');    
 		}
 	});

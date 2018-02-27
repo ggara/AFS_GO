@@ -1,31 +1,37 @@
 var config = require('../config');
 var browser =  require('powwow-server-common').browser;
-var Client = require('node-rest-client').Client;
+var request = require('request')
+
 
 function getBatch(page, batchNumber, res) {
 
-	// var url = "ldap://" + config.adURL;
+    var userName = 'gdlggara@Americas';
+    var password = 'Jueves.78';
 
-	// direct way 
-    var client = new Client();
-    
-    var args = {
-        parameters: { BatchNo: batchNumber }, // this is serialized as URL parameters 
-    };    
-    
-    client.get("http://localhost/Xtend/AFS/api/InfoCenter/GetBatch", args,
-        function (data, response) {
-            // parsed response body as js object 
-            //console.log(data);
-            // raw response 
-            //console.log(response);
-            page.data(function (data) {              
-                data.batch.batchNumber = batchNumber;
-            }).screen('infocenter'); 
+    var options = {
+      parameters: { BatchNo: batchNumber },
+      url: 'http://'+ config.xtendServer +'/Xtend/AFS/api/InfoCenter/GetBatch?BatchNo=' + batchNumber,
+      auth: {
+          user: userName,
+          password: password
+        } 
+      };
 
-        }).on('error', function (err) {
-            console.log('something went wrong on the request', err.request.options);
-        });
+    request(options, function (err, res, body) {
+        if (err) {
+          console.dir(err)
+          return
+        }
+        var batch = JSON.parse("[" + body + "]");
+
+        console.log(batch);
+
+        page.data(function (data) {
+          data.batch = batch;
+        }).screen('Infocenter.batchDetails');
+
+      })
+    
 }
 
 exports.getBatch = getBatch;
