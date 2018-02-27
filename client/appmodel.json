@@ -152,6 +152,12 @@
       },
       "txtBatchEvent": {
         "type": "action"
+      },
+      "CartonNumber": {
+        "type": "string"
+      },
+      "cartonErrorMessage": {
+        "type": "string"
       }
     }
   },

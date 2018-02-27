@@ -40,73 +40,16 @@
         </div>
         <div ng-if="data.tabs[1].selected">
             <div class="card" data-comp-display="card.1" data-comp-id="div.2">
-                <div class="row">
-                    <div class="col">
-                        <div data-comp-id="text.4" style="font-weight: bold; font-size: 20px;">Carton General Information</div>
-                    </div>
-                </div>
-                <div class="row" data-comp-id="row.2">
-                    <div class="col" data-comp-id="column.2">
-                        <div data-comp-id="text.5">Carton number</div>
-                    </div>
-                    <div class="col" data-comp-id="column.3">
-                        <div data-comp-id="text.6" ng-bind="data.carton.cartonNumber"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.4">
-                        <div data-comp-id="text.7">Status</div>
-                    </div>
-                    <div class="col" data-comp-id="column.5">
-                        <div data-comp-id="text.8" ng-bind="data.carton.Status"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.6">
-                        <div data-comp-id="text.9">Customer Order Line</div>
-                    </div>
-                    <div class="col" data-comp-id="column.7">
-                        <div data-comp-id="text.10" ng-bind="data.carton.customerOrderLine"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.8">
-                        <div data-comp-id="text.11">Inspection Group Number</div>
-                    </div>
-                    <div class="col" data-comp-id="column.9">
-                        <div data-comp-id="text.12" ng-bind="data.carton.inspectionGroupNumber"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.10">
-                        <div data-comp-id="text.13">Barcode Number</div>
-                    </div>
-                    <div class="col" data-comp-id="column.11">
-                        <div data-comp-id="text.14" ng-bind="data.carton.barcodeNumber"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.12">
-                        <div data-comp-id="text.15">Carton Type</div>
-                    </div>
-                    <div class="col" data-comp-id="column.13">
-                        <div data-comp-id="text.16" ng-bind="data.carton.cartonType"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" data-comp-id="column.14">
-                        <div data-comp-id="text.17">BackFlushed</div>
-                    </div>
-                    <div class="col" data-comp-id="column.15">
-                        <div data-comp-id="text.18" ng-bind="data.carton.backFlushed"
-                            style="font-weight: bold;"></div>
-                    </div>
-                </div>
+                <br>
+                <label class="item item-input" data-comp-id=".2">
+                    <input ng-model="data.BatchNumber" placeholder="Enter carton number"
+                        style="text-align: center" type="text">
+                </label>
+                <div data-comp-id="text.4" ng-bind="data.errorMessage"
+                    ng-model="data.errorMessage" powwow-change="{dynamic:false}">Error message</div>
+                <button
+                    class="button fa-icon fa-barcode positive-icon button-footer-center button-energized button-block icon-left"
+                    data-comp-id="button.3" ng-click="scan()" style="">Scan Batch Number</button>
             </div>
         </div>
     </ion-content>
