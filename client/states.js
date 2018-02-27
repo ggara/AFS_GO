@@ -69,5 +69,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.infocenter/cartondetails', {
+        views: {
+            app: {
+                controller: 'app_infocenter_cartondetails',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.infocenter.cartondetails');
+                }
+            }
+        }
     });
 });
