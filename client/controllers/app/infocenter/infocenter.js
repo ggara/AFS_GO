@@ -26,7 +26,14 @@ function app_infocenter_infocenter($scope, app) {
     };
     
     $scope.scan = function () {
-        var batchNumber = "29021612B10005";
+        var batchNumber = $scope.data.BatchNumber;
+        $scope.data.errorMessage = "";
+        
+        if (batchNumber === undefined || batchNumber.length === 0) {
+            $scope.data.errorMessage = 'Please enter a batch number';
+            return;
+        }
+        
         $scope.app.showLoading('Searching for batch number: ' + batchNumber);
         var api = app.call("infocenter.getBatch", batchNumber);
         /*
