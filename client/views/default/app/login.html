@@ -33,17 +33,15 @@
                         <label class="item item-input" data-comp-id="textInput.3"
                             style="border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(74, 129, 148, 0.298039); border-bottom-width: 1px; border-bottom-style: solid; margin: 0px;">
                             <i class="icon placeholder-icon ion-ios-world-outline" style="font-size: 24px;"></i>
-                            <select name="domain" ng-model="data.domain" required="" type="text">
-                                <option value="Europe">Europe</option>
+                            <select name="domain" ng-model="data.domain" placeholder="Domain" required="">
+                                <option disabled="" hidden="" selected="" value="">Domain</option>
                                 <option value="Americas">Americas</option>
                                 <option value="Asia">Asia</option>
+                                <option value="Europe">Europe</option>
                             </select>
                         </label>
                     </div>
                 </div>
-                <!--User Input-->
-                <!--User Input-->
-                <!--User Input-->
                 <div class="row" data-comp-id="row.3" style="margin: 5% 0%;">
                     <div class="col" data-comp-id="column.3">
                         <input class="button button-block" data-comp-id="button.1" ng-click="login()"
