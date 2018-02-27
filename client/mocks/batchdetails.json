@@ -1,5 +1,5 @@
 {
-"batch": {
+"batch": [{
     "Id": 7,
     "taskId": 41,
     "isScrap": false,
@@ -20,7 +20,7 @@
     "Status": "Completed",
     "Quantity": 12,
     "TaskNumber": "JDI000035-CUT088001"
-  },
+  }],
   "issueslist": [
     {
       "id": "0000506",
