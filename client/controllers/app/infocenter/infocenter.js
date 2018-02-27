@@ -52,4 +52,32 @@ function app_infocenter_infocenter($scope, app) {
         var api = app.call("infocenter.getBatch", batchNumber);
         
     };
+    
+    $scope.scanCarton = function () {
+        var cartonNumber = $scope.data.CartonNumber;
+        $scope.data.cartonErrorMessage = "";
+        
+        if (cartonNumber === undefined || cartonNumber.length === 0) {
+            
+           cordova.plugins.barcodeScanner.scan(function (result) {
+                setTimeout(function () {
+                    $scope.data.cartonNumber = result.text;
+                    $scope.$digest();
+                }, 0);
+            }, function (error) {
+            }, {
+                'preferFrontCamera': false,
+                'showFlipCameraButton': true,
+                'showTorchButton': true,
+                'orientation': 'landscape'
+            });
+        
+            $scope.data.cartonErrorMessage = 'Please enter a carton number';
+            return;
+        }
+        
+        $scope.app.showLoading('Searching for carton number: ' + cartonNumber);
+        var api = app.call("infocenter.getCarton", cartonNumber);
+        
+    };
 }
