@@ -1,0 +1,43 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" header_bg" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon menu_btn" data-comp-id="button.1"
+                ng-click="app.go('app.menu')"></button>
+        </ion-nav-buttons>
+        <ion-nav-title class="head_title" data-comp-id="nav-title.1">Details</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-home menu_btn" data-comp-id="button.2"
+                ng-click="app.go('app.home')"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1">
+        <div class="d_list">
+            <ul>
+                <li>
+                    <label>Batch Number</label>
+                    <span ng-bind="data.batchnumber"></span>
+                </li>
+                <li>
+                    <label>Status</label>
+                    <span ng-bind="data.status"></span>
+                </li>
+                <li>
+                    <label>Task Number</label>
+                    <span ng-bind="data.tasknumber"></span>
+                </li>
+                <li>
+                    <label>Quantity</label>
+                    <span ng-bind="data.quantity"></span>
+                </li>
+                <li>
+                    <label>Current Operation</label>
+                    <span ng-bind="data.currentopp"></span>
+                </li>
+                <li>
+                    <label>Next Operation</label>
+                    <span ng-bind="data.nextopp"></span>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

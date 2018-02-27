@@ -46,6 +46,13 @@
           "sourceScreenId": "app.tabbednavigation.tabscool",
           "sourceAppId": "universaltemplates",
           "model": "infocenter"
+        },
+        {
+          "id": "batchdetails",
+          "name": "batchDetails",
+          "sourceScreenId": "app.details",
+          "sourceAppId": "xtendpowwow",
+          "model": "batchdetails"
         }
       ]
     },
