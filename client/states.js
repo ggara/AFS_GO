@@ -60,5 +60,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.infocenter/batchdetails', {
+        views: {
+            app: {
+                controller: 'app_infocenter_batchdetails',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.infocenter.batchdetails');
+                }
+            }
+        }
     });
 });
