@@ -140,6 +140,12 @@
             "type": "string"
           }
         }
+      },
+      "BatchNumber": {
+        "type": "string"
+      },
+      "errorMessage": {
+        "type": "string"
       }
     }
   },
