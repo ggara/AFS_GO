@@ -146,6 +146,9 @@
       },
       "errorMessage": {
         "type": "string"
+      },
+      "txtBatchEvent": {
+        "type": "action"
       }
     }
   },

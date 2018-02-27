@@ -31,6 +31,8 @@
                 <input ng-model="data.BatchNumber" placeholder="Enter batch number"
                     style="text-align: center" type="text">
             </label>
+            <div data-comp-id="text.3" ng-bind="data.errorMessage"
+                ng-model="data.errorMessage" powwow-change="{dynamic:false}">Error message</div>
             <button
                 class="button fa-icon fa-barcode positive-icon button-footer-center button-energized button-block icon-left"
                 data-comp-id="button.2" ng-click="scan()" style="">Scan Batch Number</button>
@@ -39,68 +41,68 @@
             <div class="card" data-comp-display="card.1" data-comp-id="div.2">
                 <div class="row">
                     <div class="col">
-                        <div data-comp-id="text.3" style="font-weight: bold; font-size: 20px;">Carton General Information</div>
+                        <div data-comp-id="text.4" style="font-weight: bold; font-size: 20px;">Carton General Information</div>
                     </div>
                 </div>
                 <div class="row" data-comp-id="row.2">
                     <div class="col" data-comp-id="column.2">
-                        <div data-comp-id="text.4">Carton number</div>
+                        <div data-comp-id="text.5">Carton number</div>
                     </div>
                     <div class="col" data-comp-id="column.3">
-                        <div data-comp-id="text.5" ng-bind="data.carton.cartonNumber"></div>
+                        <div data-comp-id="text.6" ng-bind="data.carton.cartonNumber"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.4">
-                        <div data-comp-id="text.6">Status</div>
+                        <div data-comp-id="text.7">Status</div>
                     </div>
                     <div class="col" data-comp-id="column.5">
-                        <div data-comp-id="text.7" ng-bind="data.carton.Status"
+                        <div data-comp-id="text.8" ng-bind="data.carton.Status"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.6">
-                        <div data-comp-id="text.8">Customer Order Line</div>
+                        <div data-comp-id="text.9">Customer Order Line</div>
                     </div>
                     <div class="col" data-comp-id="column.7">
-                        <div data-comp-id="text.9" ng-bind="data.carton.customerOrderLine"
+                        <div data-comp-id="text.10" ng-bind="data.carton.customerOrderLine"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.8">
-                        <div data-comp-id="text.10">Inspection Group Number</div>
+                        <div data-comp-id="text.11">Inspection Group Number</div>
                     </div>
                     <div class="col" data-comp-id="column.9">
-                        <div data-comp-id="text.11" ng-bind="data.carton.inspectionGroupNumber"
+                        <div data-comp-id="text.12" ng-bind="data.carton.inspectionGroupNumber"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.10">
-                        <div data-comp-id="text.12">Barcode Number</div>
+                        <div data-comp-id="text.13">Barcode Number</div>
                     </div>
                     <div class="col" data-comp-id="column.11">
-                        <div data-comp-id="text.13" ng-bind="data.carton.barcodeNumber"
+                        <div data-comp-id="text.14" ng-bind="data.carton.barcodeNumber"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.12">
-                        <div data-comp-id="text.14">Carton Type</div>
+                        <div data-comp-id="text.15">Carton Type</div>
                     </div>
                     <div class="col" data-comp-id="column.13">
-                        <div data-comp-id="text.15" ng-bind="data.carton.cartonType"
+                        <div data-comp-id="text.16" ng-bind="data.carton.cartonType"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col" data-comp-id="column.14">
-                        <div data-comp-id="text.16">BackFlushed</div>
+                        <div data-comp-id="text.17">BackFlushed</div>
                     </div>
                     <div class="col" data-comp-id="column.15">
-                        <div data-comp-id="text.17" ng-bind="data.carton.backFlushed"
+                        <div data-comp-id="text.18" ng-bind="data.carton.backFlushed"
                             style="font-weight: bold;"></div>
                     </div>
                 </div>
