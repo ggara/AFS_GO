@@ -30,26 +30,26 @@ function app_infocenter_infocenter($scope, app) {
         $scope.data.errorMessage = "";
         
         if (batchNumber === undefined || batchNumber.length === 0) {
+            
+           cordova.plugins.barcodeScanner.scan(function (result) {
+                setTimeout(function () {
+                    $scope.data.BatchNumber = result.text;
+                    $scope.$digest();
+                }, 0);
+            }, function (error) {
+            }, {
+                'preferFrontCamera': false,
+                'showFlipCameraButton': true,
+                'showTorchButton': true,
+                'orientation': 'landscape'
+            });
+        
             $scope.data.errorMessage = 'Please enter a batch number';
             return;
         }
         
         $scope.app.showLoading('Searching for batch number: ' + batchNumber);
         var api = app.call("infocenter.getBatch", batchNumber);
-        /*
-       cordova.plugins.barcodeScanner.scan(function (result) {
-            setTimeout(function () {
-                //$scope.data.format = result.format;
-                //$scope.data.trackingNumber = result.text;
-                $scope.$digest();
-            }, 0);
-        }, function (error) {
-        }, {
-            'preferFrontCamera': false,
-            'showFlipCameraButton': true,
-            'showTorchButton': true,
-            'orientation': 'landscape'
-        });
-        */
+        
     };
 }

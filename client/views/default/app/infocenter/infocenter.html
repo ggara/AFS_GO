@@ -27,9 +27,10 @@
             </div>
         </div>
         <div ng-if="data.tabs[0].selected">
+            <br>
             <label class="item item-input" data-comp-id=".1">
-                <input ng-model="data.BatchNumber" ng-onkey="scan()"
-                    placeholder="Enter batch number" style="text-align: center" type="text">
+                <input ng-model="data.BatchNumber" placeholder="Enter batch number"
+                    style="text-align: center" type="text">
             </label>
             <div data-comp-id="text.3" ng-bind="data.errorMessage"
                 ng-model="data.errorMessage" powwow-change="{dynamic:false}">Error message</div>
