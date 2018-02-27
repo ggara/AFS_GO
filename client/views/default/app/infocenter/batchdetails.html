@@ -4,7 +4,7 @@
             <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
                 ng-click="app.go('app.infocenter.infocenter')"></button>
         </ion-nav-buttons>
-        <ion-nav-title data-comp-id="nav-title.1" style="color: rgb(255, 255, 255);">Batch</ion-nav-title>
+        <ion-nav-title data-comp-id="nav-title.1" style="color: rgb(255, 255, 255);">Batch General Information</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
@@ -28,20 +28,24 @@
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: normal; margin: 4px 0px;"></div>
                 </div>
             </div>
+            <br>
             <div class="row" data-comp-id="row.3" style="padding: 0px 12px;">
-                <div class="col col-10" data-comp-id="column.4">
-                    <i class="icon fa-icon fa-suitcase" data-comp-id="icon.1"
-                        style="font-size: 14px; color: rgb(153, 153, 153);"></i>
+                <div class="col col-20" data-comp-id="column.4">
+                    <i class="icon fa-icon fa-sort-numeric-asc" data-comp-id="icon.1"
+                        style="font-size: 14px; color: rgb(153, 153, 153);">
+                        Qty</i>
                 </div>
                 <div class="col" data-comp-id="column.5">
                     <div data-comp-id="text.4" ng-bind="item.Quantity"
-                        style="color: rgb(102, 102, 102); font-size: 14px;"></div>
+                        style="color: rgb(102, 102, 102); font-size: 14px; font-weight: bold;"></div>
                 </div>
             </div>
             <div class="row" data-comp-id="row.4" style="padding: 0px 12px;">
-                <div class="col col-10" data-comp-id="column.6">
-                    <i class="icon fa-icon fa-user" data-comp-id="icon.2"
-                        style="font-size: 14px; color: rgb(153, 153, 153);"></i>
+                <div class="col col-30" data-comp-id="column.6">
+                    <i class="icon ion-android-expand" data-comp-id="icon.2"
+                        style="font-size: 14px; color: rgb(153, 153, 153);">
+                        Current Operation
+                    </i>
                 </div>
                 <div class="col" data-comp-id="column.7">
                     <div data-comp-id="text.5" ng-bind="item.CurrentOperation"
@@ -49,9 +53,10 @@
                 </div>
             </div>
             <div class="row" data-comp-id="row.5" style="padding: 0px 12px;">
-                <div class="col col-10" data-comp-id="column.8">
-                    <i class="icon fa-icon fa-clock-o" data-comp-id="icon.3"
-                        style="font-size: 14px; color: rgb(153, 153, 153);"></i>
+                <div class="col col-30" data-comp-id="column.8">
+                    <i class="icon ion-android-exit" data-comp-id="icon.3"
+                        style="font-size: 14px; color: rgb(153, 153, 153);">
+                        Next Operation</i>
                 </div>
                 <div class="col" data-comp-id="column.9">
                     <div data-comp-id="text.6" ng-bind="item.NextOperation"
