@@ -30,10 +30,14 @@ function app_login($scope, app, $q) {
         else if (!$scope.data.password){
             $scope.data.errorMessage = "Invalid Password";
         }
+        else if (!$scope.data.domain){
+            $scope.data.errorMessage = "Invalid Domain";
+        }
         else{
             var user = {
                 userName: $scope.data.username,
-                password: $scope.data.password
+                password: $scope.data.password,
+                domain: $scope.data.domain
             }
             $scope.app.showLoading('Logging in');
             app.call("login.login", user);
