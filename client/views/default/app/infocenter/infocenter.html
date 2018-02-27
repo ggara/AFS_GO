@@ -1,8 +1,7 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
         <ion-nav-buttons side="left">
-            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
-                ng-click="app.go('app.home')"></button>
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1" ng-click="app.go('app.home')"></button>
         </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Infocenter</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
@@ -11,25 +10,16 @@
         <!--Tabs-->
         <div data-comp-id="div.1">
             <div class="row light-bg" data-comp-id="row.1" style="padding: 0px;">
-                <div class="col text-center" data-comp-id="column.1"
-                    ng-click="changeSelection(item)" ng-repeat="item in data.tabs"
-                    ng-style="item.selected ? {borderBottom: '3px solid rgb(67, 152, 210)'} : {backgroundColor: 'rgb(243,243,243)'}"
-                    style="margin: 0px 0px -5px;">
-                    <i class="icon {{item.icon}} positive" data-comp-id="icon.1"
-                        ng-if="item.selected" style="font-size: 30px;"></i>
-                    <i class="icon {{item.icon}} calm" data-comp-id="icon.2" ng-if="!item.selected"
-                        style="font-size: 30px;"></i>
-                    <div class=" positive" data-comp-id="text.1" ng-bind="item.name"
-                        ng-if="item.selected" style="font-weight: normal;"></div>
-                    <div class=" calm" data-comp-id="text.2" ng-bind="item.name"
-                        ng-if="!item.selected" style="font-weight: normal;">Tab 1</div>
+                <div class="col text-center" data-comp-id="column.1" ng-click="changeSelection(item)" ng-repeat="item in data.tabs" ng-style="item.selected ? {borderBottom: '3px solid rgb(67, 152, 210)'} : {backgroundColor: 'rgb(243,243,243)'}" style="margin: 0px 0px -5px;">
+                    <i class="icon {{item.icon}} positive" data-comp-id="icon.1" ng-if="item.selected" style="font-size: 30px;"></i>
+                    <i class="icon {{item.icon}} calm" data-comp-id="icon.2" ng-if="!item.selected" style="font-size: 30px;"></i>
+                    <div class=" positive" data-comp-id="text.1" ng-bind="item.name" ng-if="item.selected" style="font-weight: normal;"></div>
+                    <div class=" calm" data-comp-id="text.2" ng-bind="item.name" ng-if="!item.selected" style="font-weight: normal;">Tab 1</div>
                 </div>
             </div>
         </div>
         <div ng-if="data.tabs[0].selected">
-            <button
-                class="button fa-icon fa-barcode positive-icon button-footer-center button-energized button-block icon-left"
-                data-comp-id="button.2" ng-click="scan()" style="">Scan Batch Number</button>
+            <button class="button fa-icon fa-barcode positive-icon button-footer-center button-energized button-block icon-left" data-comp-id="button.2" ng-click="scan()" style="">Scan Batch Number</button>
             <div class="card" data-comp-display="card.1" data-comp-id="div.2">
                 <div class="row">
                     <div class="col">
@@ -41,8 +31,7 @@
                         <div data-comp-id="text.4">Batch number</div>
                     </div>
                     <div class="col" data-comp-id="column.3">
-                        <div data-comp-id="text.5" ng-bind="data.batch.batchNumber"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.5" ng-bind="data.batch.BatchNumber" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -50,8 +39,7 @@
                         <div data-comp-id="text.6">Status</div>
                     </div>
                     <div class="col" data-comp-id="column.5">
-                        <div data-comp-id="text.7" ng-bind="data.batch.status"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.7" ng-bind="data.batch.Status" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -59,8 +47,7 @@
                         <div data-comp-id="text.8">Task Number</div>
                     </div>
                     <div class="col" data-comp-id="column.7">
-                        <div data-comp-id="text.9" ng-bind="data.batch.taskNumber"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.9" ng-bind="data.batch.TaskNumber" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -68,8 +55,7 @@
                         <div data-comp-id="text.10">Quantity</div>
                     </div>
                     <div class="col" data-comp-id="column.9">
-                        <div data-comp-id="text.11" ng-bind="data.batch.quantity"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.11" ng-bind="data.batch.Quantity" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -77,8 +63,7 @@
                         <div data-comp-id="text.12">Current Operation</div>
                     </div>
                     <div class="col" data-comp-id="column.11">
-                        <div data-comp-id="text.13" ng-bind="data.batch.currentOperation"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.13" ng-bind="data.batch.CurrentOperation" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -86,8 +71,7 @@
                         <div data-comp-id="text.14">Next Operation</div>
                     </div>
                     <div class="col" data-comp-id="column.13">
-                        <div data-comp-id="text.15" ng-bind="data.batch.nextOperation"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.15" ng-bind="data.batch.NextOperation" style="font-weight: bold;"></div>
                     </div>
                 </div>
             </div>
@@ -112,8 +96,7 @@
                         <div data-comp-id="text.19">Status</div>
                     </div>
                     <div class="col" data-comp-id="column.17">
-                        <div data-comp-id="text.20" ng-bind="data.carton.Status"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.20" ng-bind="data.carton.Status" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -121,8 +104,7 @@
                         <div data-comp-id="text.21">Customer Order Line</div>
                     </div>
                     <div class="col" data-comp-id="column.19">
-                        <div data-comp-id="text.22" ng-bind="data.carton.customerOrderLine"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.22" ng-bind="data.carton.customerOrderLine" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -130,8 +112,7 @@
                         <div data-comp-id="text.23">Inspection Group Number</div>
                     </div>
                     <div class="col" data-comp-id="column.21">
-                        <div data-comp-id="text.24" ng-bind="data.carton.inspectionGroupNumber"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.24" ng-bind="data.carton.inspectionGroupNumber" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -139,8 +120,7 @@
                         <div data-comp-id="text.25">Barcode Number</div>
                     </div>
                     <div class="col" data-comp-id="column.23">
-                        <div data-comp-id="text.26" ng-bind="data.carton.barcodeNumber"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.26" ng-bind="data.carton.barcodeNumber" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -148,8 +128,7 @@
                         <div data-comp-id="text.27">Carton Type</div>
                     </div>
                     <div class="col" data-comp-id="column.25">
-                        <div data-comp-id="text.28" ng-bind="data.carton.cartonType"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.28" ng-bind="data.carton.cartonType" style="font-weight: bold;"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -157,8 +136,7 @@
                         <div data-comp-id="text.29">BackFlushed</div>
                     </div>
                     <div class="col" data-comp-id="column.27">
-                        <div data-comp-id="text.30" ng-bind="data.carton.backFlushed"
-                            style="font-weight: bold;"></div>
+                        <div data-comp-id="text.30" ng-bind="data.carton.backFlushed" style="font-weight: bold;"></div>
                     </div>
                 </div>
             </div>

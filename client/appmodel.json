@@ -92,25 +92,25 @@
           "Id": {
             "type": "string"
           },
-          "batchNumber": {
+          "BatchNumber": {
             "type": "string",
             "update": {
               "type": "none"
             }
           },
-          "status": {
+          "Status": {
             "type": "string"
           },
-          "quantity": {
+          "Quantity": {
             "type": "string"
           },
-          "taskNumber": {
+          "TaskNumber": {
             "type": "string"
           },
-          "currentOperation": {
+          "CurrentOperation": {
             "type": "string"
           },
-          "nextOperation": {
+          "NextOperation": {
             "type": "string"
           }
         }
