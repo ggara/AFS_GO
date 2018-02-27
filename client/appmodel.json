@@ -59,6 +59,9 @@
       },
       "submit": {
         "type": "action"
+      },
+      "domain": {
+        "type": "string"
       }
     }
   },
