@@ -87,60 +87,54 @@
         }
       },
       "batch": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "Id": {
-              "type": "string"
-            },
-            "batchNumber": {
-              "type": "string"
-            },
-            "status": {
-              "type": "string"
-            },
-            "quantity": {
-              "type": "string"
-            },
-            "taskNumber": {
-              "type": "string"
-            },
-            "currentOperation": {
-              "type": "string"
-            },
-            "nextOperation": {
-              "type": "string"
-            }
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string"
+          },
+          "batchNumber": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "taskNumber": {
+            "type": "string"
+          },
+          "currentOperation": {
+            "type": "string"
+          },
+          "nextOperation": {
+            "type": "string"
           }
         }
       },
       "carton": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "cartonNumber": {
-              "type": "string"
-            },
-            "customerOrderLine": {
-              "type": "string"
-            },
-            "inspectionGroupNumber": {
-              "type": "string"
-            },
-            "Status": {
-              "type": "string"
-            },
-            "barcodeNumber": {
-              "type": "string"
-            },
-            "cartonType": {
-              "type": "string"
-            },
-            "backFlushed": {
-              "type": "string"
-            }
+        "type": "object",
+        "properties": {
+          "cartonNumber": {
+            "type": "string"
+          },
+          "customerOrderLine": {
+            "type": "string"
+          },
+          "inspectionGroupNumber": {
+            "type": "string"
+          },
+          "Status": {
+            "type": "string"
+          },
+          "barcodeNumber": {
+            "type": "string"
+          },
+          "cartonType": {
+            "type": "string"
+          },
+          "backFlushed": {
+            "type": "string"
           }
         }
       }
