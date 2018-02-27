@@ -193,6 +193,35 @@
         "update": {
           "type": "none"
         }
+      },
+      "batch": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Id": {
+              "type": "string"
+            },
+            "BatchNumber": {
+              "type": "string"
+            },
+            "Status": {
+              "type": "string"
+            },
+            "Quantity": {
+              "type": "string"
+            },
+            "TaskNumber": {
+              "type": "string"
+            },
+            "CurrentOperation": {
+              "type": "string"
+            },
+            "NextOperation": {
+              "type": "string"
+            }
+          }
+        }
       }
     }
   }
