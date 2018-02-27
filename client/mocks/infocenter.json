@@ -1,4 +1,26 @@
 {
+  "batch":  { 
+  "Id": 7,
+  "BatchNumber": "29021612B10005",
+  "Status": "Completed",
+  "Quantity": 12,
+  "TaskNumber": "JDI000035-CUT088001",
+  "TaskId": 41,
+  "IsScrap": false,
+  "IsTraveler": false,
+  "WorkCenter": null,
+  "Operation": null,
+  "User": null,
+  "Date": null,
+  "Defect": null,
+  "CurentOperation": null,
+  "NextOperation": null,
+  "DefectGroup": null,
+  "Comments": null,
+  "CartSerialNumber": null,
+  "LooperCount": 0,
+  "AWB": null 
+  },
   "tabs": [
     {
       "name": "Batch",
