@@ -118,40 +118,11 @@
           }
         }
       },
-      "carton": {
-        "type": "object",
-        "properties": {
-          "cartonNumber": {
-            "type": "string"
-          },
-          "customerOrderLine": {
-            "type": "string"
-          },
-          "inspectionGroupNumber": {
-            "type": "string"
-          },
-          "Status": {
-            "type": "string"
-          },
-          "barcodeNumber": {
-            "type": "string"
-          },
-          "cartonType": {
-            "type": "string"
-          },
-          "backFlushed": {
-            "type": "string"
-          }
-        }
-      },
       "BatchNumber": {
         "type": "string"
       },
       "errorMessage": {
         "type": "string"
-      },
-      "txtBatchEvent": {
-        "type": "action"
       },
       "CartonNumber": {
         "type": "string"
