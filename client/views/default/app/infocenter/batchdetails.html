@@ -8,16 +8,16 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
-        <div class=" card" data-comp-id="div.1" ng-repeat="item in data.issueslist"
+        <div class=" card" data-comp-id="div.1" ng-repeat="item in data.batch"
             style="border-image: initial; border-radius: 2px; background-color: rgb(255, 255, 255);">
             <div class="row" data-comp-id="row.1"
                 style="background-color: rgb(251, 251, 254); margin: -4px 0px 0px; padding: 4px 12px;">
                 <div class="col" data-comp-id="column.1">
-                    <div class="" data-comp-id="text.1" ng-bind="item.id"
+                    <div class="" data-comp-id="text.1" ng-bind="item.BatchNumber"
                         style="color: rgb(102, 102, 102); font-size: 20px; font-weight: normal; line-height: 20px; margin: 4px 0px;">0000506</div>
                 </div>
                 <div class="col text-right" data-comp-id="column.2">
-                    <div data-comp-id="text.2" ng-bind="item.severity"
+                    <div data-comp-id="text.2" ng-bind="item.Status"
                         style="margin: 4px 0px; font-size: 14px;">minor</div>
                 </div>
             </div>

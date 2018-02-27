@@ -1,4 +1,26 @@
 {
+"batch": [{
+    "Id": 7,
+    "taskId": 41,
+    "isScrap": false,
+    "isTraveler": false,
+    "workCenter": null,
+    "operation": null,
+    "user": null,
+    "date": null,
+    "defect": null,
+    "curentOperation": null,
+    "nextOperation": null,
+    "defectGroup": null,
+    "comments": null,
+    "cartSerialNumber": null,
+    "looperCount": 0,
+    "awb": null,
+    "BatchNumber": "29021612B10005",
+    "Status": "Completed",
+    "Quantity": 12,
+    "TaskNumber": "JDI000035-CUT088001"
+  }],
   "issueslist": [
     {
       "id": "0000506",
