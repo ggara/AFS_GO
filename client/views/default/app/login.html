@@ -33,13 +33,11 @@
                         <label class="item item-input" data-comp-id="textInput.3"
                             style="border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(74, 129, 148, 0.298039); border-bottom-width: 1px; border-bottom-style: solid; margin: 0px;">
                             <i class="icon placeholder-icon ion-ios-world-outline" style="font-size: 24px;"></i>
-                            <label class="item item-input item-select-icon positive-icon"
-                                data-comp-id="selectInput.1">
-                                <span class="input-label">Domain</span>
-                                <select ng-model="data.domain">Americas</select>
-                                <select>Asia</select>
-                                <select>Europe</select>
-                            </label>
+                            <select name="domain" ng-model="data.domain" required="" type="text">
+                                <option value="Europe">Europe</option>
+                                <option value="Americas">Americas</option>
+                                <option value="Asia">Asia</option>
+                            </select>
                         </label>
                     </div>
                 </div>
