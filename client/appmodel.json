@@ -93,7 +93,10 @@
             "type": "string"
           },
           "batchNumber": {
-            "type": "string"
+            "type": "string",
+            "update": {
+              "type": "none"
+            }
           },
           "status": {
             "type": "string"
