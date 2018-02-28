@@ -118,40 +118,17 @@
           }
         }
       },
-      "carton": {
-        "type": "object",
-        "properties": {
-          "cartonNumber": {
-            "type": "string"
-          },
-          "customerOrderLine": {
-            "type": "string"
-          },
-          "inspectionGroupNumber": {
-            "type": "string"
-          },
-          "Status": {
-            "type": "string"
-          },
-          "barcodeNumber": {
-            "type": "string"
-          },
-          "cartonType": {
-            "type": "string"
-          },
-          "backFlushed": {
-            "type": "string"
-          }
-        }
-      },
       "BatchNumber": {
         "type": "string"
       },
       "errorMessage": {
         "type": "string"
       },
-      "txtBatchEvent": {
-        "type": "action"
+      "CartonNumber": {
+        "type": "string"
+      },
+      "cartonErrorMessage": {
+        "type": "string"
       }
     }
   },
@@ -159,53 +136,6 @@
     "type": "object",
     "comment": "issueslist",
     "properties": {
-      "issueslist": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "summary": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "status": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "severity": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "assignedto": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            },
-            "updated": {
-              "type": "string",
-              "update": {
-                "type": "none"
-              }
-            }
-          }
-        },
-        "update": {
-          "type": "none"
-        }
-      },
       "batch": {
         "type": "array",
         "items": {
@@ -234,6 +164,47 @@
             }
           }
         }
+      },
+      "errorMessage": {
+        "type": "string"
+      }
+    }
+  },
+  "cartondetails": {
+    "type": "object",
+    "comment": "issueslist",
+    "properties": {
+      "carton": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "BarCodeNumber": {
+              "type": "string"
+            },
+            "CartonNumber": {
+              "type": "string"
+            },
+            "CartonType": {
+              "type": "string"
+            },
+            "CustomerOrderNumber": {
+              "type": "string"
+            },
+            "InspectionGroupNumber": {
+              "type": "string"
+            },
+            "InspectionGroupStatus": {
+              "type": "string"
+            },
+            "Status": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "errorMessage": {
+        "type": "string"
       }
     }
   }

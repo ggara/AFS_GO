@@ -1,0 +1,11 @@
+{
+"carton": [{
+    "BarCodeNumber": "00000912014010174442",
+    "CartonNumber": "17444",
+    "CartonType": "X16",
+    "CustomerOrderNumber": "5801283693",
+    "InspectionGroupNumber": "5801283693-40-011",
+    "InspectionGroupStatus": "Passed",
+    "Status": "OBA Passed"
+  }]
+}

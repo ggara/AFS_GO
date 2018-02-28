@@ -4,19 +4,19 @@
             <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"
                 ng-click="app.go('app.infocenter.infocenter')"></button>
         </ion-nav-buttons>
-        <ion-nav-title data-comp-id="nav-title.1" style="color: rgb(255, 255, 255);">Batch General Information</ion-nav-title>
+        <ion-nav-title data-comp-id="nav-title.1" style="color: rgb(255, 255, 255);">Carton General Information</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1" style="">
         <div data-comp-id="text.1" ng-bind="data.errorMessage"
             ng-model="data.errorMessage" powwow-change="{dynamic:false}"
             style="font-size: 14px; font-weight: bold; color: Red; text-align: center;">Error message</div>
-        <div class=" card" data-comp-id="div.1" ng-repeat="item in data.batch"
+        <div class=" card" data-comp-id="div.1" ng-repeat="item in data.carton"
             style="border-image: initial; border-radius: 2px; background-color: rgb(255, 255, 255);">
             <div class="row" data-comp-id="row.1"
                 style="background-color: rgb(251, 251, 254); margin: -4px 0px 0px; padding: 4px 12px;">
                 <div class="col" data-comp-id="column.1">
-                    <div class="" data-comp-id="text.2" ng-bind="item.BatchNumber"
+                    <div class="" data-comp-id="text.2" ng-bind="item.CartonNumber"
                         style="color: rgb(102, 102, 102); font-size: 20px; font-weight: normal; line-height: 20px; margin: 4px 0px;">0000506</div>
                 </div>
                 <div class="col text-right" data-comp-id="column.2">
@@ -33,46 +33,62 @@
             </div>
             <div class="row" data-comp-id="row.3" style="padding: 0px 12px;">
                 <div class="col col-30" data-comp-id="column.4">
-                    <i class="icon fa-icon fa-tasks" data-comp-id="icon.1"
+                    <i class="icon ion-document" data-comp-id="icon.1"
                         style="font-size: 14px; color: rgb(153, 153, 153);">
-                        Task Number</i>
-                </div>
-                <div class="col" data-comp-id="column.5">
-                    <div data-comp-id="text.5" ng-bind="item.TaskNumber"
-                        style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
+                        Customer Order Number</i>
                 </div>
             </div>
-            <div class="row" data-comp-id="row.4" style="padding: 0px 12px;">
-                <div class="col col-30" data-comp-id="column.6">
-                    <i class="icon fa-icon fa-sort-numeric-asc" data-comp-id="icon.2"
-                        style="font-size: 14px; color: rgb(153, 153, 153);">
-                        Quantity</i>
-                </div>
-                <div class="col" data-comp-id="column.7">
-                    <div data-comp-id="text.6" ng-bind="item.Quantity"
+            <div class="row" data-comp-id="row.4"
+                style="border-bottom: 1px solid rgb(241, 241, 241); padding: 0px 12px;">
+                <div class="col col-30" data-comp-id="column.5"></div>
+                <div class="" data-comp-id="column.6">
+                    <div data-comp-id="text.5" ng-bind="item.CustomerOrderNumber"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
             <div class="row" data-comp-id="row.5" style="padding: 0px 12px;">
-                <div class="col col-30" data-comp-id="column.8">
-                    <i class="icon ion-android-expand" data-comp-id="icon.3"
+                <div class="col col-30" data-comp-id="column.7">
+                    <i class="icon ion-android-search" data-comp-id="icon.2"
                         style="font-size: 14px; color: rgb(153, 153, 153);">
-                        Current Operation
-                    </i>
+                        Inspection Group Number</i>
                 </div>
-                <div class="col" data-comp-id="column.9">
-                    <div data-comp-id="text.7" ng-bind="item.CurentOperation"
+            </div>
+            <div class="row" data-comp-id="row.6"
+                style="border-bottom: 1px solid rgb(241, 241, 241); padding: 0px 12px;">
+                <div class="col col-30" data-comp-id="column.8"></div>
+                <div class="" data-comp-id="column.9">
+                    <div data-comp-id="text.6" ng-bind="item.InspectionGroupNumber"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
-            <div class="row" data-comp-id="row.6" style="padding: 0px 12px;">
+            <div class="row" data-comp-id="row.7" style="padding: 0px 12px;">
                 <div class="col col-30" data-comp-id="column.10">
-                    <i class="icon ion-android-exit" data-comp-id="icon.4"
+                    <i class="icon ion-ios-barcode-outline" data-comp-id="icon.3"
                         style="font-size: 14px; color: rgb(153, 153, 153);">
-                        Next Operation</i>
+                        Barcode Number
+                    </i>
                 </div>
-                <div class="col" data-comp-id="column.11">
-                    <div data-comp-id="text.8" ng-bind="item.NextOperation"
+            </div>
+            <div class="row" data-comp-id="row.8"
+                style="border-bottom: 1px solid rgb(241, 241, 241); padding: 0px 12px;">
+                <div class="col col-30" data-comp-id="column.11"></div>
+                <div class="" data-comp-id="column.12">
+                    <div data-comp-id="text.7" ng-bind="item.BarCodeNumber"
+                        style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.9" style="padding: 0px 12px;">
+                <div class="col col-30" data-comp-id="column.13">
+                    <i class="icon ion-social-dropbox-outline" data-comp-id="icon.4"
+                        style="font-size: 14px; color: rgb(153, 153, 153);">
+                        Carton Type</i>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.10"
+                style="border-bottom: 1px solid rgb(241, 241, 241); padding: 0px 12px;">
+                <div class="col col-30" data-comp-id="column.14"></div>
+                <div class="" data-comp-id="column.15">
+                    <div data-comp-id="text.8" ng-bind="item.CartonType"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>

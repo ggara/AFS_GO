@@ -53,6 +53,13 @@
           "sourceScreenId": "app.tableviewadvanced.tableviewadvancedcaptivating",
           "sourceAppId": "universaltemplates",
           "model": "batchdetails"
+        },
+        {
+          "id": "cartondetails",
+          "name": "cartonDetails",
+          "sourceScreenId": "app.infocenter.batchdetails",
+          "sourceAppId": "afs_go",
+          "model": "cartondetails"
         }
       ]
     },
