@@ -26,6 +26,9 @@
       },
       "password": {
         "type": "string"
+      },
+      "domain": {
+        "type": "string"
       }
     }
   },
