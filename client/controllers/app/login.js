@@ -1,10 +1,18 @@
 angular.module('app').controller('app_login', app_login);
-function app_login($scope, app, $q) {
+function app_login($scope, app, $q, $localStorage, $rootScope) {
     'use strict';
     app.init($scope);
-    if (!$scope.data) {
+    /*if (!$scope.data) {
         $scope.data = {};
-    }
+    }*/
+    
+    setTimeout(function () {
+        $scope.data.username = $localStorage.username;
+        $scope.data.domain = $localStorage.domain;
+    });
+    
+    $rootScope.currentServer = $localStorage.currentServer;
+    
     var checkSupport = function () {
         var deferred = $q.defer();
         if (typeof cordova !== 'undefined' && window.plugins && window.plugins.touchid) {
