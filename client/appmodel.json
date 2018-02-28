@@ -20,6 +20,12 @@
       },
       "action6": {
         "type": "action"
+      },
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
       }
     }
   },
