@@ -8,23 +8,26 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <div data-comp-id="text.1" ng-bind="data.errorMessage"
+            ng-model="data.errorMessage" powwow-change="{dynamic:false}"
+            style="font-size: 14px; font-weight: bold; color: Red; text-align: center;">Error message</div>
         <div class=" card" data-comp-id="div.1" ng-repeat="item in data.batch"
             style="border-image: initial; border-radius: 2px; background-color: rgb(255, 255, 255);">
             <div class="row" data-comp-id="row.1"
                 style="background-color: rgb(251, 251, 254); margin: -4px 0px 0px; padding: 4px 12px;">
                 <div class="col" data-comp-id="column.1">
-                    <div class="" data-comp-id="text.1" ng-bind="item.BatchNumber"
+                    <div class="" data-comp-id="text.2" ng-bind="item.BatchNumber"
                         style="color: rgb(102, 102, 102); font-size: 20px; font-weight: normal; line-height: 20px; margin: 4px 0px;">0000506</div>
                 </div>
                 <div class="col text-right" data-comp-id="column.2">
-                    <div data-comp-id="text.2" ng-bind="item.Status"
+                    <div data-comp-id="text.3" ng-bind="item.Status"
                         style="margin: 4px 0px; font-size: 14px; font-weight: bold;">minor</div>
                 </div>
             </div>
             <div class="row" data-comp-id="row.2"
                 style="border-bottom: 1px solid rgb(241, 241, 241); padding: 0px 12px;">
                 <div class="col" data-comp-id="column.3" style="">
-                    <div data-comp-id="text.3"
+                    <div data-comp-id="text.4"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: normal; margin: 4px 0px;"></div>
                 </div>
             </div>
@@ -35,7 +38,7 @@
                         Task Number</i>
                 </div>
                 <div class="col" data-comp-id="column.5">
-                    <div data-comp-id="text.4" ng-bind="item.TaskNumber"
+                    <div data-comp-id="text.5" ng-bind="item.TaskNumber"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
@@ -46,7 +49,7 @@
                         Quantity</i>
                 </div>
                 <div class="col" data-comp-id="column.7">
-                    <div data-comp-id="text.5" ng-bind="item.Quantity"
+                    <div data-comp-id="text.6" ng-bind="item.Quantity"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
@@ -58,7 +61,7 @@
                     </i>
                 </div>
                 <div class="col" data-comp-id="column.9">
-                    <div data-comp-id="text.6" ng-bind="item.CurentOperation"
+                    <div data-comp-id="text.7" ng-bind="item.CurentOperation"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
@@ -69,7 +72,7 @@
                         Next Operation</i>
                 </div>
                 <div class="col" data-comp-id="column.11">
-                    <div data-comp-id="text.7" ng-bind="item.NextOperation"
+                    <div data-comp-id="text.8" ng-bind="item.NextOperation"
                         style="color: rgb(102, 102, 102); font-size: 14px; font-weight: 800;"></div>
                 </div>
             </div>
