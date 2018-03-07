@@ -32,6 +32,7 @@ function login(page, user, res) {
 		} else {
             page.data(function (data) {              
                 data.username = user.userName;
+                data.password = user.password;
                 data.domain = user.domain;
             }).screen('home');    
 		}
