@@ -29,12 +29,15 @@ function app_infocenter_infocenter($scope, app) {
         var batchNumber = $scope.data.BatchNumber;
         $scope.data.errorMessage = "";
         
+        $scope.app.showLoading('Searching for batch number: ' + batchNumber);
+        
         if (batchNumber === undefined || batchNumber.length === 0) {
             
            cordova.plugins.barcodeScanner.scan(function (result) {
                 setTimeout(function () {
                     $scope.data.BatchNumber = result.text;
                     $scope.$digest();
+                    var api = app.call("infocenter.getBatch", batchNumber);
                 }, 0);
             }, function (error) {
             }, {
@@ -48,7 +51,7 @@ function app_infocenter_infocenter($scope, app) {
             return;
         }
         
-        $scope.app.showLoading('Searching for batch number: ' + batchNumber);
+        
         var api = app.call("infocenter.getBatch", batchNumber);
         
     };
@@ -57,12 +60,15 @@ function app_infocenter_infocenter($scope, app) {
         var cartonNumber = $scope.data.CartonNumber;
         $scope.data.cartonErrorMessage = "";
         
+        $scope.app.showLoading('Searching for carton number: ' + cartonNumber);
+        
         if (cartonNumber === undefined || cartonNumber.length === 0) {
             
            cordova.plugins.barcodeScanner.scan(function (result) {
                 setTimeout(function () {
-                    $scope.data.cartonNumber = result.text;
+                    $scope.data.CartonNumber = result.text;
                     $scope.$digest();
+                    var api = app.call("infocenter.getCarton", cartonNumber);
                 }, 0);
             }, function (error) {
             }, {
@@ -76,7 +82,7 @@ function app_infocenter_infocenter($scope, app) {
             return;
         }
         
-        $scope.app.showLoading('Searching for carton number: ' + cartonNumber);
+        
         var api = app.call("infocenter.getCarton", cartonNumber);
         
     };
