@@ -37,6 +37,7 @@ function app_infocenter_infocenter($scope, app) {
                 setTimeout(function () {
                     $scope.data.BatchNumber = result.text;
                     $scope.$digest();
+                    app.call("infocenter.getBatch", result.text);
                 }, 0);
             }, function (error) {
             }, {
@@ -46,7 +47,6 @@ function app_infocenter_infocenter($scope, app) {
                 'orientation': 'landscape'
             });
         
-            app.call("infocenter.getBatch", batchNumber);
             return;
         }
         
@@ -66,6 +66,7 @@ function app_infocenter_infocenter($scope, app) {
                 setTimeout(function () {
                     $scope.data.CartonNumber = result.text;
                     $scope.$digest();
+                    app.call("infocenter.getCarton", result.text);
                 }, 0);
             }, function (error) {
             }, {
@@ -75,7 +76,6 @@ function app_infocenter_infocenter($scope, app) {
                 'orientation': 'landscape'
             });
         
-            app.call("infocenter.getCarton", cartonNumber);
             return;
         }
         
