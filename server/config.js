@@ -2,7 +2,7 @@
 module.exports = {
     // Start URL that browsing should start at.
     startURL: 'about:blank',
-    adURL: 'ad.flextronics.com',
+    adURL: '10.10.8.130',
     xtendServer: '10.10.228.177',
     // Start Method when there is no start URL.  This is fpr when we are doing an API integration,
     // and we don't actually need to load phantom (yet).
@@ -33,7 +33,7 @@ module.exports = {
     //
     // ******* Timeout configuration *******
     // How long before a client request should be timed out if it doesn't finish executing? (in milliseconds)
-    timeout: 3 * 60 * 1000,
+    timeout: 3 * 60 * 1000,      
     //
     // For how long should the session remain open once the client has disconnected? (in milliseconds)
     lifetime: 3 * 60 * 1000,
