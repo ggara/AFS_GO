@@ -37,7 +37,6 @@ function app_infocenter_infocenter($scope, app) {
                 setTimeout(function () {
                     $scope.data.BatchNumber = result.text;
                     $scope.$digest();
-                    var api = app.call("infocenter.getBatch", batchNumber);
                 }, 0);
             }, function (error) {
             }, {
@@ -47,10 +46,9 @@ function app_infocenter_infocenter($scope, app) {
                 'orientation': 'landscape'
             });
         
-            $scope.data.errorMessage = 'Please enter a batch number';
+            app.call("infocenter.getBatch", batchNumber);
             return;
         }
-        
         
         var api = app.call("infocenter.getBatch", batchNumber);
         
@@ -68,7 +66,6 @@ function app_infocenter_infocenter($scope, app) {
                 setTimeout(function () {
                     $scope.data.CartonNumber = result.text;
                     $scope.$digest();
-                    var api = app.call("infocenter.getCarton", cartonNumber);
                 }, 0);
             }, function (error) {
             }, {
@@ -78,7 +75,7 @@ function app_infocenter_infocenter($scope, app) {
                 'orientation': 'landscape'
             });
         
-            $scope.data.cartonErrorMessage = 'Please enter a carton number';
+            app.call("infocenter.getCarton", cartonNumber);
             return;
         }
         
