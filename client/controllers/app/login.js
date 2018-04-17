@@ -42,7 +42,7 @@ function app_login($scope, app, $q) {
             $scope.data.errorMessage = "Invalid Domain";
         }
         else{
-            $localStorage.username = $scope.data.username;
+            //$localStorage.username = $scope.data.username;
             var user = {
                 userName: $scope.data.username,
                 password: $scope.data.password,
