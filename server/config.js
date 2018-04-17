@@ -112,7 +112,7 @@ module.exports = {
     // },
     //
     // ********* Local Storage configuration **********
-    localStorageIsolationOff: false,
+    localStorageIsolationOff: true,
     // Set this to true to not isolate local storage.
     // When localStorageIsolation is on (the default) then we will by default
     // create a temp folder to keep localStorage under the current
