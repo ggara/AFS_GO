@@ -1,5 +1,5 @@
 angular.module('app').controller('app_login', app_login);
-function app_login($scope, app, $q) {
+function app_login($scope, app, $q, $localStorage) {
     'use strict';
     app.init($scope);
     /*if (!$scope.data) {
